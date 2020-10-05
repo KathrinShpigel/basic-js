@@ -6,9 +6,7 @@ module.exports = function calculateHanoi(disksNumber, turnsSpeed) {
   turnsSpeed = Number(turnsSpeed);
 
   function calcMoves(num) {
-    if (num <= 0) {
-      return 'Please enter a positive number';
-    } else if (num === 1) {
+    if (num === 1) {
       return count;
     } else {
       return (calcMoves(num - 1) * 2 + 1);
